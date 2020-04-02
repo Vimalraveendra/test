@@ -10,3 +10,8 @@ it("searching for google ", () => {
   expect(googleSearch("testtest", dbMock)).toEqual([]),
     expect(googleSearch("dog", dbMock)).toEqual(["dog.com", "dogpicture.com"]);
 });
+
+it("should work with undefined & null  ", () => {
+  expect(googleSearch(undefined, dbMock)).toEqual([]),
+    expect(googleSearch(null, dbMock)).toEqual([]);
+});
