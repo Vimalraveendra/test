@@ -20,5 +20,7 @@ const getPeople = async fetch => {
   };
 };
 
-getPeoplePromise(fetch);
-getPeople(fetch);
+module.exports = {
+  getPeople,
+  getPeoplePromise
+};
